@@ -1,0 +1,125 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width:100%;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size:14px;
+    color:hsl(228, 12%, 48%);
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 500;
+    gap:1rem;
+}
+
+h1{
+    font-family:"Fraunces", sans-serif;
+    font-size:2rem;
+    color:black;
+    margin-block: -5px;
+}
+
+main{
+    background-color: white;
+    margin: 0 auto;
+    border-radius:15px;
+    max-width:26rem;
+}
+
+picture{
+    height:100%;
+}
+
+.product-image > img{
+    width:100%;
+    height:15rem;
+    object-fit: cover;
+    object-position: 60% 50%;
+    zoom:130%;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+
+}
+
+section{
+    padding:0 1.5rem;
+    margin-block-end:2rem;
+}
+
+.prices{
+    display:flex;
+    gap:1.5rem;
+    align-items:center;
+}
+
+.primary-price{
+    font-size:2rem;
+    color:hsl(158, 36%, 37%);
+    font-weight:800;
+    font-family:"Fraunces", sans-serif;
+    display:inline;
+}
+
+.category{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.main-text{
+    line-height: 1.5;
+    margin-block-end: -10px;
+}
+
+.btn{
+    background:hsl(158, 36%, 37%);
+    color:white;
+    text-decoration:none;
+    padding:1em 7em;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:1em;
+    flex-shrink:0;
+    margin-block-start:-10px;
+}
+
+.btn:hover, .btn:active{
+    opacity:0.75;
+}
+
+@media (min-width:768px){
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        max-width:50rem;
+    }
+
+    .product-image > img{
+        border-radius:10px;
+        height:100%;
+        max-height:25rem;
+    }
+
+    section{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+        padding:1.5em;
+    }
+
+
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
